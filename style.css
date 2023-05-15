@@ -1,0 +1,347 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:slategray;
+    height: 8em;
+    border-bottom: 0.5em solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+
+#titre {
+    display: flex;
+}
+
+#coDeco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1em;
+    height: 5em;
+}
+
+
+.clear {
+    clear: both;
+}
+
+header img{
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+}
+div a{
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 7em;
+    margin-bottom: 4em;
+}
+    
+
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+    height: 2em;
+    border-top: 0.25em solid black;
+    /* footer en bas de page toujours */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+    padding: 2em;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.articles a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight:normal;
+}
+
+.articles a:hover {
+    color: slategray;
+}
+
+.articles p {
+    padding: 0;
+    margin: 0;
+}
+
+.article {
+    margin: 1em;
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em black;
+}
+
+.articleSolo {
+    margin: 1em;
+    padding-top: 2em;
+    max-width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articleSolo p {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    text-align: center;
+}
+
+#formComment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin: 1em auto;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0.5em auto;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em black;
+    padding: 0.5em;
+}
+
+#connexion input {
+    margin: 0.5em;
+}
+
+#addList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+}
+
+#addPost, #addAuthor, #addCategory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em black;
+    padding: 0.5em;
+}
+
+#formModif, #formDel, #formAddPost, #formAddAut, #formAddCat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    text-align: center;
+}
+
+form input, form textarea, form select {
+    margin: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color:slategrey;
+    font-weight: bold;
+    padding: 8px;
+}
+
+td {
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+tr:hover td {
+    background-color: slategrey;
+    transition: all 0.3s ease-in-out;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.firstTitle {
+    padding-top: 2em;
+}
+
+#connexion {
+    /* Formulaire de connexion */
+    height: 50%;
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em auto;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em black;
+    margin-top: 15em;
+}
+
+input[type='submit'] {
+    background-color: slategray;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.8em;
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+input[type='text'], input[type='password'], select, textarea {
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 2em 0;
+}
+
+.imgArticle {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+/* Partie responsive */
+
+@media screen and (max-width: 896px) {
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article {
+        width: 80%;
+    }
+    .articleSolo {
+        max-width: 80%;
+    }
+    .comments {
+        max-width: 80%;
+    }
+    #connexion {
+        width: 80%;
+    }
+    #formComment {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    #addList {
+        flex-direction: column;
+    }
+    #addPost, #addAuthor, #addCategory {
+        width: 80%;
+    }
+    #formModif, #formDel, #formAddPost, #formAddAut, #formAddCat {
+        width: 80%;
+    }
+
+    #titre {
+        font-size: 30%;
+    }
+}
