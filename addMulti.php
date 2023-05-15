@@ -46,7 +46,7 @@ if (isset($_POST['action'])) {
                         'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
                         'abcdefghijklmnopqrstuvwxyz');
                     $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
-                    if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+                    if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier))
                     {
                         echo 'Upload effectué avec succès !';
                     }
